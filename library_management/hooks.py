@@ -10,6 +10,30 @@ app_icon = "octicon octicon-book"
 app_color = "#589494"
 app_email = "info@frappe.io"
 app_license = "GNU General Public License"
+role_home_page = {
+    "Library Member": "article"
+}
+# Scheduled Tasks
+# ---------------
+
+scheduler_events = {
+ 	"all": [
+ 		"library_management.tasks.all"
+ 	],
+ 	"daily": [
+ 		"library_management.tasks.daily"
+ 	],
+ 	"hourly": [
+ 		"library_management.tasks.hourly"
+ 	],
+ 	"weekly": [
+ 		"library_management.tasks.weekly"
+ 	],
+ 	"monthly": [
+ 		"library_management.tasks.monthly"
+ 	]
+}
+
 
 # Includes in <head>
 # ------------------
